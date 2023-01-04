@@ -13,8 +13,16 @@ namespace VECTOR
 		};
 		//RECT  for rectangel ,POL for Polar modes
 		Vector();
+		Vector(double n1, double n2, Mode form = RECT);
 		~Vector();
-
+		double xval()const
+		{
+			return x;//report x
+		}
+		double yval()const
+		{
+			return y;//report y
+		}
 	private:
 		double x;
 		double y;
@@ -26,12 +34,12 @@ namespace VECTOR
 	Vector::Vector()
 	{
 
-	}
 
+	}
 	Vector::~Vector()
 	{
+
+
 	}
-
-
 }
 #endif // !VECTOR
