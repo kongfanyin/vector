@@ -140,6 +140,11 @@ namespace VECTOR
 		}
 		return os;
 	}
+	//conversion function
+	Vector::operator double()const
+	{
+		return mag;
+	}
 	Vector::Vector()//default constructor
 	{
 		x = y = mag = ang = 0.0;
